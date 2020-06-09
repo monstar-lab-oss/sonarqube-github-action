@@ -15,11 +15,22 @@ Integrate SonarQube with Github action to automate the code analysis. Detect bug
 **Required** The token generated for SonarQube project. See [how to generate SonarQube token](https://docs.sonarqube.org/latest/user-guide/user-token/).
 
 ## Example usage
-```bash
-uses: monstar-lab-oss/sonarqube-github-action@v1.0.1
-with:
-  url: ${{ secrets.SONARQUBE_URL }}
-  token: ${{ secrets.SONARQUBE_TOKEN }}
+```yaml
+name: SonarQube
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  run-sonarqube:
+    runs-on: ubuntu-latest
+    steps:
+    - name: SonarQube Scan
+      uses: monstar-lab-oss/sonarqube-github-action@v1.0.1
+      with:
+        url: ${{ secrets.SONARQUBE_HOST }}
+        token: ${{ secrets.SONARQUBE_TOKEN }}
 ```
 
 ## SonarQube Analysis Parameters
@@ -28,7 +39,7 @@ Except 'sonar.host.url' and 'sonar.login' you can have your project configuratio
 Please make sure your run the unit tests before running the sonar scanner to generate the code coverage report.
 
 Example : sonar-project.properties
-```bash
+```properties
 sonar.language=php
 sonar.php.tests.reportPath=tests/report/junit.xml
 sonar.php.coverage.reportPaths=tests/report/coverage.xml
