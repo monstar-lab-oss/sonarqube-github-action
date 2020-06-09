@@ -1,0 +1,19 @@
+# action.yml
+name: 'Hello World'
+description: 'Greet someone and record the time'
+author: 'Palanisamy Easwaramoorthy'
+inputs:
+  url:
+    description: 'SonarQube server URL'
+    required: true
+    default: '.'
+  token:
+    description: 'Authentication token of a SonarQube user'
+    required: true
+    default: '.'  
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.url }}
+    - ${{ inputs.token }}
