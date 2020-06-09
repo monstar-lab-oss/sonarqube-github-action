@@ -35,7 +35,7 @@ jobs:
 ```
 
 ## SonarQube Analysis Parameters
-You can have other sonar scanner [analysis parameters](https://docs.sonarqube.org/latest/analysis/analysis-parameters/) in configuration file 'sonar-project.properties' inside root directory of your project repo.
+You can have other sonar scanner [analysis parameters](https://docs.sonarqube.org/latest/analysis/analysis-parameters/) in configuration file named 'sonar-project.properties' inside root directory of your project repo.
 
 Example : sonar-project.properties
 ```properties
