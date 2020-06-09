@@ -1,6 +1,6 @@
 # action.yml
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'SonarQube Scanner'
+description: 'Code analysis'
 author: 'Palanisamy Easwaramoorthy'
 inputs:
   url:

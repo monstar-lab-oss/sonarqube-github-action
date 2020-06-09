@@ -1,5 +1,7 @@
-#!/bin/sh -l
+#!/bin/bash
 
-sonarsource/sonar-scanner-cli \
-	-Dsonar.host.url=$1 \
-	-Dsonar.login=$2
+set -e
+
+sonar-scanner \
+	-Dsonar.host.url=${INPUT_URL} \
+	-Dsonar.login=${INPUT_TOKEN}
