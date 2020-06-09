@@ -16,7 +16,7 @@ Integrate SonarQube with Github action to automate the code analysis. Detect bug
 
 ## Example usage
 ```bash
-uses: monstar-lab-oss/sonarqube-github-action@v1
+uses: monstar-lab-oss/sonarqube-github-action@v1.0.1
 with:
   url: ${{ secrets.SONARQUBE_URL }}
   token: ${{ secrets.SONARQUBE_TOKEN }}
