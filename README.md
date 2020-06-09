@@ -1,6 +1,9 @@
 # SonarQube Github Action
 Integrate SonarQube with Github action to automate the code analysis. Detect bugs, vulnerabilities, code smells and get code coverage on each pull request or push.
 
+## Pre-requisite
+- Setup [SonarQube](https://docs.sonarqube.org/latest/setup/install-server/) server.
+
 ## Inputs
 
 ### `url`
@@ -9,7 +12,7 @@ Integrate SonarQube with Github action to automate the code analysis. Detect bug
 
 ### `token`
 
-**Required** The token generated for SonarQube project.
+**Required** The token generated for SonarQube project. See [how to generate SonarQube token](https://docs.sonarqube.org/latest/user-guide/user-token/).
 
 ## Example usage
 ```bash
