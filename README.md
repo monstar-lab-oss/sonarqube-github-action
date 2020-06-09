@@ -1,4 +1,4 @@
-# Sonarqube Github Action
+# SonarQube Github Action
 Integrate SonarQube with Github action to automate the code analysis. Detect bugs, vulnerabilities, code smells and get code coverage on each pull request or push.
 
 ## Inputs
