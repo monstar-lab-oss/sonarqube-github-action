@@ -15,6 +15,7 @@ Integrate SonarQube with Github action to automate the code analysis. Detect bug
 **Required** The token generated for SonarQube project. See [how to generate SonarQube token](https://docs.sonarqube.org/latest/user-guide/user-token/).
 
 ## Example usage
+Note : Please make sure you added SONARQUBE_HOST and SONARQUBE_TOKEN in your github project secrets.
 ```yaml
 name: SonarQube
 
