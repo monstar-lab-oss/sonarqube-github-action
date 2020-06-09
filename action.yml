@@ -1,6 +1,6 @@
 # action.yml
-name: 'SonarQube Scanner'
-description: 'Code analysis'
+name: 'SonarQube Code Scanner'
+description: 'SonarQube is an automatic code review tool to detect bugs, vulnerabilities and code smells in your code.'
 author: 'Palanisamy Easwaramoorthy'
 inputs:
   url:
